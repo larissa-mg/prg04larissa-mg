@@ -7,6 +7,8 @@ A estrutura do projeto foi pensada para trazer organização e escalabilidade, p
 
 * Infrastructure: pasta que contém a infraestrutura geral do projeto.
   * Assets: contém elementos gerais utilizados no projeto.
+    * Audios: reservada para os arquivos de áudio.
+    * CSS: reservada para os arquivos de CSS Externo.
     * Icons: reservada para os arquivos de icons.
     * Images: reservada para os arquivos de imagens gerais.
   * Pages: contém as páginas iniciais do projeto, que apresentam o site de forma geral.
