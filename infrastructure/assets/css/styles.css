@@ -1,0 +1,18 @@
+body {
+    background-color:#ccdcf4; /* Define a cor de fundo da página */
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto dentro de todos os elementos h1 */
+}
+
+p, li {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
+}
+
+.quote {
+    border-left: 4px solid #000000; /* Define a largura, o estilo e a cor da barra */
+    padding-left: 10px; /* Adiciona um espaço entre a barra e o texto */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; /* Define a fonte do texto */
+  }
+  
