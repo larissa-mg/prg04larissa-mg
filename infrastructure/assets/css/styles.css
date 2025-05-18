@@ -1,30 +1,128 @@
 body {
-    background-color:#ffffff; /* Define a cor de fundo da página */
+  background-color:#f5f5f5;                           /* Define a cor de fundo da página */
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Define a fonte da página */
 }
 
 h1 {
-    text-align: center; /* Centraliza o texto dentro de todos os elementos h1 */
-    color:#D52D00;
+  text-align: center; /* Centraliza o texto dentro de todos os elementos h1 */
+  color:#D52D00;
 }
 
 p, li {
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
 }
 
-.quote {
-    border-left: 4px solid #000000; /* Define a largura, o estilo e a cor da barra */
-    padding-left: 10px; /* Adiciona um espaço entre a barra e o texto */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; /* Define a fonte do texto */
-  }
-  
-  .paleta {
-    display: flex; /* Alinha os quadrados horizontalmente */
-    flex-wrap: wrap; /* Quebra para a próxima linha em telas menores */
-    gap: 30px; /* Espaçamento entre os quadrados */
-    padding: 20px;
-  }
 
-  .cor-quadrado {
-    width: 100px; /* Largura dos quadrados */
-    height: 100px; /* Altura dos quadrados */
-  }
+.quote {
+  border-left: 4px solid #000000; /* Define a largura, o estilo e a cor da barra */
+  padding-left: 10px;               /* Adiciona um espaço entre a barra e o texto */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; /* Define a fonte do texto */
+}
+  
+.paleta {
+  display: flex;   /* Alinha os quadrados horizontalmente */
+  flex-wrap: wrap; /* Quebra para a próxima linha em telas menores */
+  gap: 30px;       /* Espaçamento entre os quadrados */
+  padding: 20px;
+}
+
+.cor-quadrado {
+  width: 100px;    /* Largura dos quadrados */
+  height: 100px;   /* Altura dos quadrados */
+}
+
+form {
+  max-width: 300px;               /* Largura máxima do formulário */
+  margin: 20px auto;              /* Centraliza o formulário na página com 20px de margem */
+  padding: 20px;                  /* Espaçamento interno do formulário */
+  border: 1px solid #dddddd;
+  border-radius: 5px;             /* Arredonda a borda */
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;            /* Faz cada label ocupar sua própria linha */
+  margin-bottom: 5px;        /* Espaço abaixo do label */
+  font-weight: bold;
+  color: #D52D00;
+}
+
+input {
+  width: 100%;                 /* Ocupa toda a largura disponível */
+  padding: 8px;                /* Espaçamento interno */
+  margin-bottom: 15px;         /* Espaço abaixo de cada input */
+  border: 1px solid #cccccc;
+  border-radius: 4px;          /* Arredonda a borda */
+  box-sizing: border-box;      /* Garante que padding não some à largura total */
+}
+
+#button-login, #button-entrar {
+  padding: 10px;               /* Espaçamento interno */
+  background-color: #EF7627;
+  color: #ffffff;
+  border: none;                /* Remove borda padrão */
+  border-radius: 4px;          /* Arredonda a borda */
+  font-size: 16px;
+}
+
+#button-login {
+  display: block;      /* Faz o botão se comportar como bloco */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  margin-bottom: 10px; /* Espaço abaixo do botão */
+}
+
+#button-entrar {
+  width: 100%;  /* Ocupa toda a largura do container */
+}
+
+#button-login:hover, #button-entrar:hover {
+  background-color: #D52D00; 
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado padrão de links */
+}
+
+.table-usuarios {
+  width: 80%;                                 /* Largura da tabela: 80% do container pai */
+  margin: 2rem auto;                          /* Margem: 2rem top/bottom, auto para centralizar horizontalmente */
+  border-collapse: collapse;                  /* Remove espaços entre bordas de células */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil com 20% de opacidade */
+  background-color: #ffffff;
+}
+
+.table-usuarios th, .table-usuarios td {
+  padding: 12px 15px;                 /* Espaçamento interno */
+  text-align: left;                   /* Alinhamento do texto à esquerda */
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-usuarios th {
+  background-color: #A30262;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table-usuarios tr:hover {
+  background-color: #f9f9f9;
+}
+
+.button-editar, .button-excluir {
+  padding: 6px 12px;  /* Espaçamento interno equilibrado */
+  border: none;       /* Remove borda padrão */
+  border-radius: 4px; /* Cantos levemente arredondados */
+  cursor: pointer;    /* Muda cursor */
+  font-size: 14px;     
+  margin-left: 5px;   /* Espaço entre botões */
+}
+
+.button-editar {
+  background-color: #EF7627;
+  color: #ffffff;
+  margin-left: 15px;  /* Espaço extra à esquerda */
+}
+
+.button-excluir {
+  background-color: #3D3D3D;
+  color: #ffffff;
+}
