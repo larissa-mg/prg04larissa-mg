@@ -10,6 +10,8 @@ h1 {
 
 p, li {
   font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 
@@ -125,4 +127,59 @@ a {
 .button-excluir {
   background-color: #3D3D3D;
   color: #ffffff;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 40px; /* Espaçamento entre os itens */
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #A30262;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+#menu a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #f5f5f5; 
+  padding: 10px 0 30px 0;                       /* Espaçamento interno */
+  margin: 0px;                                  /* Remove margens externas do header */
+  text-align: center;                           /* Centraliza o conteúdo dentro do header */
+  border-bottom: 5px solid #ccc;              /* Linha inferior destacando o final do cabeçalho */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   /* Sombra sutil abaixo do cabeçalho */
+}
+
+h1 {
+  font-family: 'Georgia', serif; 
+  font-size: 2.5rem;              /* Tamanho da fonte do título */
+  color: #D52D00; 
+  margin-bottom: 30px;            /* Espaço abaixo do título */
+}
+
+/* Seção principal da página "Sobre" */
+#sobre { 
+  max-width: 900px;        /* Largura máxima do conteúdo para facilitar a leitura */
+  margin: 0 auto;          /* Centraliza horizontalmente o conteúdo */
+  padding: 40px 20px;      /* Espaçamento interno */
+  line-height: 1.7;        /* Altura entre linhas */
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 30px;                     /* Espaço acima de cada subtítulo */
+  color: #EF7627;
+  border-left: 4px solid #EF7627;     /* Borda decorativa à esquerda do h2 */
+  padding-left: 10px;                   /* Espaço entre o texto e a borda esquerda */
 }
