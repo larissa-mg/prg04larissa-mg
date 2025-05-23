@@ -179,3 +179,130 @@ h2 {
   border-left: 4px solid #EF7627;     /* Borda decorativa à esquerda do h2 */
   padding-left: 10px;                   /* Espaço entre o texto e a borda esquerda */
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+
+  p, li, #sobre {
+    font-size: 1rem;
+    padding: 20px 15px;
+  }
+
+  .menu ul {
+    gap: 0px; 
+  }
+
+  .menu li {
+    margin: 0;  /* Remove margens extras */
+  }
+
+  .menu li a {
+    font-size: 0.9rem;
+    padding: 5px 8px;     /* Espaçamento interno */
+  }
+
+  form {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .table-usuarios {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Empilha os botões */
+    gap: 10px;              /* Espaço entre os botões */
+    align-items: stretch;   /* Garante que ocupem toda a largura do container */
+  }
+
+  .button-container button {
+    width: 100%;        /* Faz os botões ocuparem toda a largura do container */
+    margin-left: 0;     /* Remove qualquer espaçamento lateral */
+    text-align: center; /* Centraliza o texto */
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 990px) {
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  p, li, #sobre {
+    font-size: 1.05rem;
+    padding: 30px 25px; /* Espaçamento interno */
+  }
+
+  .menu ul {
+    gap: 0px;
+  }
+
+  .menu li {
+    margin: 0;  /* Remove margens extras */
+  }
+
+  .menu li a {
+    font-size: 1.0rem;
+    padding: 5px 8px;     /* Espaçamento interno */
+  }
+
+  form {
+    max-width: 80%;
+  }
+
+  .table-usuarios {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .button-container {
+  display: flex;
+  flex-direction: column; /* Empilha os botões */
+  gap: 10px;              /* Espaço entre os botões */
+  align-items: stretch;   /* Garante que ocupem toda a largura do container */
+}
+
+.button-container button {
+  width: 100%;        /* Faz os botões ocuparem toda a largura do container */
+  margin-left: 0;     /* Remove qualquer espaçamento lateral */
+  text-align: center; /* Centraliza o texto */
+  font-size: 12px;
+  padding: 4px 8px;   /* Define o espaçamento interno */
+}
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 991px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #sobre {
+    font-size: 1.1rem;
+    padding: 40px 20px; /* Define o espaçamento interno */
+  }
+
+  .menu ul {
+    gap: 40px; /* Define o espaçamento entre os itens do menu */
+  }
+
+  .table-usuarios {
+    width: 80%; /* Define a largura da tabela para 80% do elemento pai */
+  }
+}
